@@ -1,0 +1,59 @@
+﻿{
+  "output_file": "Settings/settings.json",
+  "Command": {
+    "type": "textbox",
+    "value": "!ts",
+    "label": "Command Name",
+    "tooltip": "Command that will be used to get Info\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  },
+  "ReponseMessage": {
+    "type": "textbox",
+    "value": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW\r\nViel Spaß!",
+    "label": "Text to whisper to user",
+    "tooltip": "This message is send when the user is in the choosen permission group\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  },
+  "ReponseMessageToChat": {
+    "type": "textbox",
+    "value": "Hey {0}, dir wurden die Teamspeak-Daten zugeflüstert ;)",
+    "label": "Response message to the chat ",
+    "tooltip": "This is the message the bot sends to the main chat\r\ne.g.: Info to the user that he got a whisper message\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  },
+  "Permission": {
+    "type": "dropdown",
+    "value": "Subscriber",
+    "items": [
+      "Everyone",
+      "Regular",
+      "Subscriber",
+      "VIP+",
+      "VIP Exclusive",
+      "User_Specific",
+      "Min_Rank",
+      "Min_Points",
+      "Min_Hours",
+      "Moderator",
+      "Editor",
+      "Caster"
+    ],
+    "label": "Permission level",
+    "tooltip": "Set the permission level for the command\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  },
+  "ReponseNotEnoughPermissions": {
+    "type": "textbox",
+    "value": "Sorry {0}, der Befehl \"{1}\" ist nur für {2}!",
+    "label": "Not enough permissions response",
+    "tooltip": "Response to the user w/o the correct permissions\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  },
+  "ReponseMessageToNonTwitch": {
+    "type": "textbox",
+    "value": "{0}, der Befehl \"{1}\" ist nur im Twitch-Chat verfügbar.",
+    "label": "Not send from Twitch",
+    "tooltip": "Response when the user has not send the command in the Twitch chat\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
+    "group": "Main Settings"
+  }
+}
