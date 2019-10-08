@@ -9,7 +9,7 @@ class MySettings(object):
 				self.__dict__ = json.load(f, encoding="utf-8")
 		except:
 			self.Command = "!ts"
-			self.ReponseMessage = "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW\r\nViel Spaß!"
+			self.ReponseMessage = "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW"
 			self.ReponseMessageToChat = "Hey {0}, dir wurden die Teamspeak-Daten zugeflüstert ;)"
 			self.Permission = "Subscriber"
 			self.ReponseNotEnoughPermissions = "Sorry {0}, der Befehl \"{1}\" ist nur für {2}!"

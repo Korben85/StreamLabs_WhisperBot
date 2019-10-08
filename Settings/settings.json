@@ -1,6 +1,6 @@
 ﻿{
   "Command": "!ts",
-  "ReponseMessage": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW\r\nViel Spaß!",
+  "ReponseMessage": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW",
   "ReponseMessageToChat": "Hey {0}, dir wurden die Teamspeak-Daten zugeflüstert ;)",
   "Permission": "Subscriber",
   "ReponseNotEnoughPermissions": "Sorry {0}, der Befehl \"{1}\" ist nur für {2}!"

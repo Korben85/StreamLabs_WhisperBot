@@ -9,7 +9,7 @@
   },
   "ReponseMessage": {
     "type": "textbox",
-    "value": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW\r\nViel Spaß!",
+	  "value": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW",
     "label": "Text to whisper to user",
     "tooltip": "This message is send when the user is in the choosen permission group\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
     "group": "Main Settings"
