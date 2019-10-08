@@ -49,7 +49,7 @@ def Init():
     ScriptSettings = MySettings(SettingsFile)
     ScriptSettings.Response = "Settings overwritten! ^_^"
     return
-	
+
 #---------------------------
 #   [Required] Execute Data / Process messages
 #---------------------------
@@ -60,7 +60,7 @@ def Execute(data):
 		else: # Not Enough Permissions Response
 			SendNotEnoughPerms(data)
 	return
- 
+
 #---------------------------
 #   [Required] Tick method (Gets called during every iteration even when there is no incoming data)
 #---------------------------
@@ -87,24 +87,24 @@ def Unload():
 #---------------------------
 def ScriptToggled(state):
     return
-	
+
 #---------------------------
 #   SendAllGood
 #---------------------------
 def SendAllGood(data):
 	if data.IsFromTwitch():
 		#Send whisper message to User (SendStreamMessage | SendTwitchMessage)
-		Parent.SendTwitchMessage("/w $username " + ScriptSettings.ReponseMessage.format(data.User, ScriptSettings.Command, ScriptSettings.Permission)) #"/w $username " + -> whisper to user
-		Parent.SendTwitchMessage(ScriptSettings.ReponseMessageToChat.format(data.User, ScriptSettings.Command, ScriptSettings.Permission))		
+		Parent.SendTwitchMessage("/w $username " + ScriptSettings.ResponseMessage.format(data.User, ScriptSettings.Command, ScriptSettings.Permission)) #"/w $username " + -> whisper to user
+		Parent.SendTwitchMessage(ScriptSettings.ResponseMessageToChat.format(data.User, ScriptSettings.Command, ScriptSettings.Permission))
 	return
-	
+
 #---------------------------
 #   SendNotEnoughPerms
 #---------------------------
 def SendNotEnoughPerms(data):
 	if data.IsFromTwitch():
-		Parent.SendTwitchMessage(ScriptSettings.ReponseNotEnoughPermissions.format(
+		Parent.SendTwitchMessage(ScriptSettings.ResponseNotEnoughPermissions.format(
 		data.User, ScriptSettings.Command, ScriptSettings.Permission))
 	else:
-		Parent.SendStreamMessage(ScriptSettings.ReponseMessageToNonTwitch.format(data.User, ScriptSettings.Command, ScriptSettings.Permission))
+		Parent.SendStreamMessage(ScriptSettings.ResponseMessageToNonTwitch.format(data.User, ScriptSettings.Command, ScriptSettings.Permission))
 	return

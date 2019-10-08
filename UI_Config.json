@@ -7,14 +7,14 @@
     "tooltip": "Command that will be used to get Info\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
     "group": "Main Settings"
   },
-  "ReponseMessage": {
+  "ResponseMessage": {
     "type": "textbox",
 	  "value": "{0}, hier sind die TS-Daten: Server:255.255.255.255 PW:sicheresPW",
     "label": "Text to whisper to user",
     "tooltip": "This message is send when the user is in the choosen permission group\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
     "group": "Main Settings"
   },
-  "ReponseMessageToChat": {
+  "ResponseMessageToChat": {
     "type": "textbox",
     "value": "Hey {0}, dir wurden die Teamspeak-Daten zugeflüstert ;)",
     "label": "Response message to the chat ",
@@ -42,14 +42,14 @@
     "tooltip": "Set the permission level for the command\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
     "group": "Main Settings"
   },
-  "ReponseNotEnoughPermissions": {
+  "ResponseNotEnoughPermissions": {
     "type": "textbox",
     "value": "Sorry {0}, der Befehl \"{1}\" ist nur für {2}!",
     "label": "Not enough permissions response",
     "tooltip": "Response to the user w/o the correct permissions\r\n{0} = Username\r\n{1} = Command Name\r\n{2} = Command Permission",
     "group": "Main Settings"
   },
-  "ReponseMessageToNonTwitch": {
+  "ResponseMessageToNonTwitch": {
     "type": "textbox",
     "value": "{0}, der Befehl \"{1}\" ist nur im Twitch-Chat verfügbar.",
     "label": "Not send from Twitch",
